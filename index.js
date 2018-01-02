@@ -28,10 +28,17 @@ function deleteItem() {
     });
 }
 
+function checkItem() {
+    $('.shopping-list').on('click', '.shopping-item-toggle', function(event){
+        console.log('check item function started');
+        $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+    });
+}
 
 function handleShoppingApp(){
     addNewItem();
     deleteItem();
+    checkItem();
 }
 
 $(handleShoppingApp);
