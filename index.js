@@ -18,7 +18,8 @@ function addNewItem() {
           </button>
         </div>
       </li>
-        `);     
+        `);
+        $('.js-shopping-list-entry').val('');     
     });
 }
 function deleteItem() {
